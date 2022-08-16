@@ -28,6 +28,6 @@ public class Student {
     private String age;
 
     @NotEmpty(message = "major must not be null")
-   // @Column(columnDefinition = "varchar(10) check (major='CS' or major='MATH' or major='Engineer' )")
+    @Column(columnDefinition = "varchar(10) check (major='CS' or major='MATH' or major='Engineer' )")
     private String major;
 }
